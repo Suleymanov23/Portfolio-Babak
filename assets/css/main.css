@@ -12858,12 +12858,12 @@ footer a {
     background-size: contain !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-    min-height: 240px; /* ensure enough vertical space to display the full image */
+    min-height: 400px; /* increased height to show full image on phones */
   }
 
   /* Also ensure the entry container has enough height so absolute image is visible */
   .entry.h2 {
-    min-height: 240px;
+    min-height: 400px;
   }
 
   /* Slightly lighter overlay on small screens */
