@@ -12850,6 +12850,29 @@ footer a {
   opacity: 1;
 }
 
+/* Responsive fixes for portfolio images on small screens */
+@media (max-width: 767px) {
+  /* For the center large item (h2), show the whole image on phones without changing desktop */
+  .entry.h2 .entry-image {
+    /* keep positioning to avoid layout shifts; only change background rendering */
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    min-height: 240px; /* ensure enough vertical space to display the full image */
+  }
+
+  /* Also ensure the entry container has enough height so absolute image is visible */
+  .entry.h2 {
+    min-height: 240px;
+  }
+
+  /* Slightly lighter overlay on small screens */
+  .entry-image .overlay-text {
+    background-color: rgba(0,0,0,0.5);
+    font-size: 16px;
+  }
+}
+
 /* line 108, src/assets/scss/pages/_theme.scss */
 .project-intro li {
   font-size: 18px;
