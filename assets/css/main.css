@@ -12821,6 +12821,33 @@ footer a {
   z-index: 1;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay text styling */
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.entry-image:hover .overlay-text {
+  opacity: 1;
 }
 
 /* line 108, src/assets/scss/pages/_theme.scss */
